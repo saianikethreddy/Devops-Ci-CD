@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+    architecture: 'x64'
 - task: DotNetCoreCLI@2
   inputs:
     azureSubscription: 'Azure for Students(13a04823-0498-4860-814d-7e6581359b65)'
