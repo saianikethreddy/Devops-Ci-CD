@@ -27,3 +27,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   h1: aniketh reddy
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'Azure for Students(13a04823-0498-4860-814d-7e6581359b65)'
+    command: 'build'
